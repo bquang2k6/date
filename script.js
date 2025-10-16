@@ -119,20 +119,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fix dark mode functionality - improved implementation
     if (darkmodeToggle) {
         // Check if user has a saved preference first
-        const savedDarkMode = localStorage.getItem('darkMode');
-        
-        // Apply saved preference or system preference if no saved preference
-        if (savedDarkMode === 'enabled') {
-            document.body.classList.add('dark-mode');
-            darkmodeToggle.checked = true;
-        } else if (savedDarkMode === null) {
-            // Check system preference only if user hasn't set a preference
-            const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (prefersDarkMode) {
-                document.body.classList.add('dark-mode');
-                darkmodeToggle.checked = true;
-            }
+        // ✅ Luôn khởi động ở chế độ sáng
+        document.body.classList.remove('dark-mode');
+        if (darkmodeToggle) {
+            darkmodeToggle.checked = false;
         }
+
+        // Nếu người dùng bật thủ công thì mới lưu
+        darkmodeToggle.addEventListener('change', function() {
+            document.body.classList.toggle('dark-mode', this.checked);
+            localStorage.setItem('darkMode', this.checked ? 'enabled' : 'disabled');
+        });
         
         // Event listener for toggle change with debugging
         darkmodeToggle.addEventListener('change', function() {
@@ -1250,7 +1247,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Handle confirm drink button click
     if (confirmDrinkBtn) {
-        confirmDrinkBtn.addEventListener('click', function() {
+        confirmDrinkBtn.addEventListener('click', function(e) {
+            if (e && typeof e.preventDefault === 'function') e.preventDefault();
             if (selectedDrinks.length > 0) {
                 // Store the selected drinks
                 localStorage.setItem('selectedDrinks', JSON.stringify(selectedDrinks));
@@ -1462,7 +1460,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Handle next button to show completion page with proper centering
     if (completionNextBtn) {
-        completionNextBtn.addEventListener('click', function() {
+        completionNextBtn.addEventListener('click', function(e) {
+            if (e && typeof e.preventDefault === 'function') e.preventDefault();
             // Hide drinks card with animation
             drinksCard.style.transform = 'scale(0.8)';
             drinksCard.style.opacity = '0';
@@ -1621,7 +1620,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
 
-        fetch('http://localhost:4000/upload', {
+        fetch('http://157.66.26.21/upload', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -2038,7 +2037,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Handle submit reason
     if (submitReason) {
-        submitReason.addEventListener('click', function() {
+        submitReason.addEventListener('click', function(e) {
+            if (e && typeof e.preventDefault === 'function') e.preventDefault();
             if (selectedReason === 'other' && !customReason) {
                 // Show visual feedback for empty custom reason
                 customReasonTextarea.style.borderColor = '#ff3366';

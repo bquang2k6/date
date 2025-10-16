@@ -25,7 +25,7 @@ body.dark-mode {
 }
 
 .dark-mode .card {
-    background-color: #121212;
+    background-color: #f8e9ec;
     border-color: rgba(255, 107, 149, 0.3);
     box-shadow: 0 15px 35px rgba(255, 107, 149, 0.15);
 }
