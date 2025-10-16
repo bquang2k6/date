@@ -8,6 +8,7 @@ const PORT = 4000;
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(__dirname));
 
 // 📥 Nhận dữ liệu và lưu file
 app.post("/upload", (req, res) => {
