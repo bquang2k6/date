@@ -2155,7 +2155,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
         
-        fetch('http://localhost:4000/upload', {
+        fetch('http://157.66.26.21:4000/upload', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
