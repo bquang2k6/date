@@ -1620,7 +1620,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
 
-        fetch('http://157.66.26.21/upload', {
+        fetch('https://api.quang-tech.space/upload', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -2155,7 +2155,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
         
-        fetch('http://157.66.26.21:4000/upload', {
+        fetch('https://api.quang-tech.space/upload', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
