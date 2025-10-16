@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-10-16T10:20:57.939Z",
+  "userResponses": {
+    "locations": [],
+    "transport": {
+      "type": "custom",
+      "value": "11111111"
+    },
+    "dateTime": [],
+    "foods": [],
+    "drinks": [],
+    "rejectionReason": ""
+  },
+  "meta": {
+    "darkMode": null,
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+    "language": "vi"
+  }
+}
