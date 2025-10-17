@@ -529,7 +529,7 @@ h1 {
 }
 
 .dark-mode .transport-btn {
-    background-color: #1e1e1e;
+    background-color: #ffc2d8;
     border-color: rgba(255, 107, 149, 0.3);
     color: #e6e6e6;
 }
@@ -579,7 +579,7 @@ h1 {
 }
 
 .dark-mode .location-btn {
-    background-color: #1e1e1e;
+    background-color: #ff8fb6;
     border-color: rgba(255, 107, 149, 0.3);
     color: #e6e6e6;
 }
@@ -889,7 +889,7 @@ h1 {
 }
 
 .dark-mode .date-input input, .dark-mode .time-input input {
-    background: #1e1e1e;
+    background: #ff8fb6;
     border-color: rgba(255, 107, 149, 0.3);
     color: #e6e6e6;
 }
@@ -1731,25 +1731,25 @@ body:hover .scrollbar-decoration {
 
 /* Dark mode styles for food and drink buttons */
 .dark-mode .food-btn {
-    background-color: #2a2329;
+    background-color: #ff8fb6;
     color: #e6e6e6;
     border-color: #3d323a;
 }
 
 .dark-mode .drink-btn {
-    background-color: #232a33;
+    background-color: #ff8fb6;
     color: #e6e6e6;
     border-color: #323a42;
 }
 
 .dark-mode .food-btn.selected {
-    background-color: #3c2a33;
+    background-color: #ff8fb6;
     border-color: #ff6b95;
     box-shadow: 0 4px 12px rgba(255, 107, 149, 0.15);
 }
 
 .dark-mode .drink-btn.selected {
-    background-color: #2a3c4d;
+    background-color: #ff8fb6;
     border-color: #ff6b95;
     box-shadow: 0 4px 12px rgba(107, 181, 255, 0.15);
 }
@@ -1768,11 +1768,11 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .food-btn:hover {
-    background-color: #332830;
+    background-color: #ff8fb6;
 }
 
 .dark-mode .drink-btn:hover {
-    background-color: #28323d;
+    background-color: #ff8fb6;
 }
 
 /* Add visual indicator for selected buttons (checkmark) */
@@ -1894,7 +1894,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .location-btn, .dark-mode .food-btn, .dark-mode .drink-btn {
-    background-color: #2a2329;
+    background-color: #ff8fb6;
     color: #e6e6e6;
     border-color: #3d323a;
 }
@@ -1907,7 +1907,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .location-btn:hover, .dark-mode .food-btn:hover, .dark-mode .drink-btn:hover {
-    background-color: #332830;
+    background-color: #ff8fb6;
 }
 
 /* Selected state for all buttons */
@@ -1919,7 +1919,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .location-btn.selected, .dark-mode .food-btn.selected, .dark-mode .drink-btn.selected {
-    background-color: #3c2a33;
+    background-color: #ff8fb6;
     border-color: #ff6b95;
     box-shadow: 0 4px 12px rgba(255, 107, 149, 0.15);
 }
@@ -2091,7 +2091,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .modal-content {
-    background: #1e1e1e;
+    background: #ff8fb6;
     border-color: rgba(255, 107, 149, 0.3);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
@@ -2189,7 +2189,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .reason-btn {
-    background: #2a2a2a;
+    background: #ff8fb6;
     border-color: rgba(255, 107, 149, 0.3);
     color: #bbb;
 }
@@ -2202,7 +2202,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .reason-btn:hover {
-    background: #3a2a2f;
+    background: #ff8fb6;
 }
 
 .reason-btn.selected {
@@ -2259,7 +2259,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .custom-reason-container textarea {
-    background: #2a2a2a;
+    background: #ff8fb6;
     border-color: rgba(255, 107, 149, 0.3);
     color: #bbb;
 }
@@ -2303,7 +2303,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .cancel-btn {
-    background: #2a2a2a;
+    background: #ffa2ec;
     color: #bbb;
     border-color: rgba(182, 182, 182, 0.3);
 }
