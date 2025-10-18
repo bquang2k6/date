@@ -2164,7 +2164,7 @@ body:hover .scrollbar-decoration {
 }
 
 .dark-mode .modal-body p {
-    color: #bbb;
+    color: #ffffff;
 }
 
 .reason-options {
@@ -2191,7 +2191,7 @@ body:hover .scrollbar-decoration {
 .dark-mode .reason-btn {
     background: #ff8fb6;
     border-color: rgba(255, 107, 149, 0.3);
-    color: #bbb;
+    color: #ffffff;
 }
 
 .reason-btn:hover {

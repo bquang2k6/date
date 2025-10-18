@@ -257,7 +257,7 @@
                     </button>
                     <button class="transport-btn" data-transport="motorbike">
                         <span class="transport-icon">🏍️</span>
-                        <span>Xe máy</span>
+                        <span>tui qua rước</span>
                     </button>
                     <button class="transport-btn" data-transport="bus">
                         <span class="transport-icon">🚌</span>
@@ -318,6 +318,10 @@
                         <span class="location-icon">🏙️</span>
                         <span>Xung quanh thành phố</span>
                     </button>
+                    <button class="location-btn" data-location="no-di">
+                        <span class="location-icon">✨</span>
+                        <span>không chọn</span>
+                    </button>
                     <button class="location-btn" data-location="somewhere-else">
                         <span class="location-icon">✨</span>
                         <span>Nơi Khác</span>
@@ -337,6 +341,7 @@
                 <h1>Chọn <span class="special-text">Khi nào</span>...</h1>
                 <div class="sakura-divider"></div>
                 <p class="question">Bạn có thời gian nào phù hợp không?</p>
+                <p class="question" style="font-size: 15px;">Lưu ý: Tối t2 lúc 18h tui phải sinh hoạt CN rồi</p>
                 <div class="datetime-container">
                     <div class="datetime-row" id="datetime-row-template">
                         <div class="date-input">
@@ -412,6 +417,12 @@
                             <img style="height: 50px; width: 80px" src="./img/photo-removebg-preview.png">
                         </span>
                         <span>Hủ tiếu</span>
+                    </button>
+                    <button class="location-btn food-btn" data-food="khong-di-an">
+                        <span class="location-icon">
+                            ✨
+                        </span>
+                        <span>Không đi ăn</span>
                     </button>
                     <button class="location-btn food-btn" data-food="custom">
                         <span class="location-icon">✨</span>
@@ -571,6 +582,12 @@
                         </span>
                         <span>Sinh tố</span>
                     </button>
+                    <button class="location-btn drink-btn" data-food="khong-di-uong">
+                        <span class="location-icon">
+                            ✨
+                        </span>
+                        <span>Không đi uống</span>
+                    </button>
                     <button class="location-btn drink-btn custom-drink-btn" data-drink="custom">
                         <span class="location-icon">✨</span>
                         <span>Một điều khác</span>
@@ -624,7 +641,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn cancel-btn" id="cancel-reason">Hủy</button>
+                    <button class="btn cancel-btn" id="cancel-reason" style="color: #ffffff;">Hủy</button>
                     <button class="btn yes-btn" id="submit-reason">Gửi lý do</button>
                 </div>
             </div>
